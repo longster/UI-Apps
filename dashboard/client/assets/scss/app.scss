@@ -1,0 +1,44 @@
+@import "settings";
+@import "foundation";
+
+
+// Application Colors
+// $primary-color: #00558b;
+// $secondary-color: #f1f1f1;
+// $alert-color: #F04124;
+// $info-color: #A0D3E8;
+// $success-color: #43AC6A;
+// $warning-color: #F08A24;
+// $dark-color: #232323;
+// $gray: #dfdfdf;
+// $gray-dark: darken($gray, 8);
+// $gray-light: lighten($gray, 8);
+
+@mixin animate ($speed) {
+  -webkit-transition: all $speed ease;
+  -moz-transition: all $speed ease;
+  -ms-transition: all $speed ease;
+  -o-transition: all $speed ease;
+  transition: all $speed ease;
+}
+
+.block-list {
+  margin-left:0;
+  margin-right: 0;
+}
+#menu-main {
+  background-color: $gray-dark;
+}
+#menu-sec {
+  background-color: $gray;
+}
+.menu-bar input {
+  margin-bottom: 0;
+  height: 3rem;
+  width: 75px;
+  @include animate(300ms);
+}
+.menu-bar input:hover,
+.menu-bar input:focus {
+  width: 180px;
+}

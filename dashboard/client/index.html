@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" ng-app="application">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation for Apps</title>
+    <link href="/assets/css/app.css" rel="stylesheet" type="text/css">
+    <script src="/assets/js/foundation.js"></script>
+    <script src="/assets/js/templates.js"></script>
+    <script src="/assets/js/routes.js"></script>
+    <script src="/assets/js/app.js"></script>
+  </head>
+  <body>
+
+
+    <!-- off canvas stuff
+    <zf-offcanvas id="menu" position="left">
+      <a zf-close="" class="close-button">×</a>
+      <br/><br/><br/><br/>
+      <section class="block-list">
+        <ul>
+          <li class="with-chevron"><a href="#">List item 1</a></li>
+          <li class="with-chevron"><a href="#">List item 2</a></li>
+          <li><a href="#">List item 3</a></li>
+        </ul>
+      </section>
+    </zf-offcanvas>
+    -->
+
+
+    <!-- App Frame always takes up 100% of the width and 100% of the height of the user's browser window. -->
+    <div class="grid-frame vertical">
+
+      <div ng-include="'partials/global-nav.html'" class="grid-block menu-group dark primary shrink">
+          Global Navigation
+      </div>
+
+      <div class="grid-block">
+
+        <!-- Primary Menu -->
+        <div id="menu-main" class="grid-block small-12 medium-2">
+          <div class="grid-block">
+            Left Primary sidebar placement 1
+        </div>
+        </div>
+
+        <div id="menu-sec" class="grid-block">
+          Left Secondary sidebar placement 2
+        </div>
+
+        <div ui-view class="grid-content">
+          Content Angular Injection?
+        </div>
+
+      </div>
+
+      <div>
+        FOoter
+      </div>
+
+    </div>
+
+  </body>
+</html>
